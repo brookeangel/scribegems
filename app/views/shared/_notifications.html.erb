@@ -1,0 +1,11 @@
+<% if flash[:errors] %>
+  <div class="alert alert-danger">
+    <%= flash[:errors].join(", ") %>
+  </div>
+<% end %>
+
+<% if flash[:success] %>
+  <div class="alert alert-success">
+    <%= flash[:success].join(", ") %>
+  </div>
+<% end %>

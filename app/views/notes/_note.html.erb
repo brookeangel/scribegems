@@ -1,0 +1,14 @@
+<div class="note-index-item">
+  <div>
+    <h3><%= note.scribe_name %> said...</h3>
+    <pre><%= note.body %></pre>
+  </div>
+  <footer class="note-footer">
+    <span>
+      <b><%= note.ta_name %>'s Lecture</b> -
+      <%= note.created_at.strftime("%B %d, %Y") %>
+    </span>
+    <%= button_to "Delete", note_url(note.id),
+    method: :delete, class: "btn btn-default" %>
+  </footer>
+</div>

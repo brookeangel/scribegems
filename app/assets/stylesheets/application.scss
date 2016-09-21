@@ -1,0 +1,27 @@
+
+@import "bootstrap-sprockets";
+@import "bootstrap";
+@import "new-age";
+
+
+.note-index-item {
+  margin: 25px 0;
+  border: 1px solid thistle;
+}
+
+.note-index-item > div {
+  padding: 10px;
+}
+
+.note-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+pre {
+  border-radius: 0;
+  border: 0;
+  background: transparent;
+}
